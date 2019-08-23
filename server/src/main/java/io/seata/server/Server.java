@@ -65,7 +65,8 @@ public class Server {
         //server host
         rpcServer.setHost(parameterParser.getHost());
         //server port
-        rpcServer.setListenPort(parameterParser.getPort());
+        //rpcServer.setListenPort(parameterParser.getPort());
+        rpcServer.setListenPort(8091);
         UUIDGenerator.init(parameterParser.getServerNode());
         //log store mode : file、db
         SessionHolder.init(parameterParser.getStoreMode());
